@@ -1,0 +1,10 @@
+CREATE DATABASE `attendance`;
+USE `attendance`;
+CREATE TABLE `attendance`.`users` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `name` VARCHAR(200) NOT NULL , `email` VARCHAR(200) NOT NULL , `username` VARCHAR(200) NOT NULL , `password` VARCHAR(200) NOT NULL , `access` VARCHAR(100) NOT NULL DEFAULT 'student' , `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_unicode_ci;
+
+CREATE TABLE `attendance`.`teachers` ( `id` INT(10) NOT NULL AUTO_INCREMENT , `name` VARCHAR(200) NOT NULL , `email` VARCHAR(200) NOT NULL , `username` VARCHAR(200) NOT NULL , `subject` VARCHAR(100) NOT NULL , `class1` VARCHAR(50) NOT NULL , `class2` VARCHAR(50) NOT NULL , `class3` VARCHAR(50) NOT NULL , `class4` VARCHAR(50) NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_unicode_ci;
+
+CREATE TABLE `attendance`.`students` ( `id` INT(10) NOT NULL AUTO_INCREMENT , `name` VARCHAR(200) NOT NULL , `email` VARCHAR(200) NOT NULL , `username` VARCHAR(200) NOT NULL , `class` VARCHAR(100) NULL DEFAULT NULL , `sub1` VARCHAR(100) NULL DEFAULT NULL , `sub1attend` INT NOT NULL DEFAULT '0' , `sub1total` INT NOT NULL DEFAULT '0' , `sub2` VARCHAR(100) NULL DEFAULT NULL , `sub2attend` INT NOT NULL DEFAULT '0' , `sub2total` INT NOT NULL DEFAULT '0' , `sub3` VARCHAR(100) NULL DEFAULT NULL , `sub3attend` INT NOT NULL DEFAULT '0' , `sub3total` INT NOT NULL DEFAULT '0' , `sub4` VARCHAR(100) NULL DEFAULT NULL , `sub4attend` INT NOT NULL DEFAULT '0' , `sub4total` INT NOT NULL DEFAULT '0' , `sub5` VARCHAR(100) NULL DEFAULT NULL , `sub5attend` INT NOT NULL DEFAULT '0' , `sub5total` INT NOT NULL DEFAULT '0' , PRIMARY KEY (`id`)) ENGINE = MyISAM CHARSET=utf32 COLLATE utf32_unicode_ci;
+
+INSERT INTO `users` (`id`, `name`, `email`, `username`, `password`, `access`, `date`) VALUES (NULL, 'Admin', 'suoeruser@admin.com', 'superuser', '78406C7EF0D6C18D3F2ACEC1E541A464', 'admin', CURRENT_TIMESTAMP);
+/*password is superuser12345*/

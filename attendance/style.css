@@ -1,0 +1,187 @@
+*{
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+
+body{
+  background : #b3ffb3;
+}
+
+.heading{
+  text-align: center;
+  top: 0;
+  margin: auto;
+  position: fixed;
+  font-family: 'Permanent Marker', cursive;
+  width: 98%;
+  z-index: 100;
+  background: #008000;
+  color: white;
+  border: 3px solid #001a00;
+  box-shadow: 10px 10px 10px #BBBBBB;
+}
+
+.home{
+  float:right;
+}
+
+i{
+  cursor: pointer;
+}
+#tabs{
+  top:150px;
+	margin: auto;
+	align-content: center;
+	width: 30%;
+	font-family: Arial,"san-serif";
+	background: rgb(215, 218, 224);
+	padding: 1px 20px 10px 20px;
+
+}
+ul.registrationList{
+  top : 0;
+  background: #778899;
+  min-height: 25px;
+}
+
+ul.registrationList li {
+    display:inline;
+    margin: auto;
+    min-height: 28px;
+  	padding: 4px 20px 4px 8px;
+  	font-size: 20px;
+    border: 1px solid #ccc;
+  	border-radius: 10px;
+  	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  	background: rgb(9, 44, 99);
+  	color: rgb(255,255,255);
+  	cursor: pointer;
+}
+
+ul.registrationList li.active {
+	border: 1px solid #ccc;
+	border-bottom-width: 0px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  background: rgb(215, 218, 224);
+	color: rgb(0,0,0);
+}
+
+#tabs-2{
+	margin: auto;
+	display: none;
+}
+#tabs-1{
+	margin: auto;
+	display: block;
+}
+input[type=text], input[type=password], input[type=submit]
+{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  width:200px;
+  min-height: 28px;
+  padding: 4px 20px 4px 8px;
+  font-size: 12px;
+  transition: all .2s linear;
+}
+
+#des{
+  width:85%;
+  min-height: 40px;
+  font-size: 16px;
+}
+
+textarea{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  width:200px;
+  min-height: 100px;
+  padding: 4px 20px 4px 8px;
+  font-size: 12px;
+  transition: all .2s linear;
+}
+
+#codearea{
+  width:85%;
+  min-height: 400px;
+  font-size: 16px;
+}
+
+textarea:focus{
+  width:300px;
+  outline: none;
+}
+input[type=text]:focus, input[type=password]:focus
+{
+  width: 300px;
+  border-color: #51a7e8;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 0 5px rgba(81,167,232,0.5);
+  outline: none;
+}
+
+.greeting{
+  top:130px;
+  position: relative;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-align: left;
+}
+.formdiv{
+  position: relative;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.View{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    width: 85%;
+    padding: 15px 0;
+    padding-top: 30px;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    border: 8px solid black;
+    text-align: center;
+    top: 140px;
+}
+
+.activeView{
+  display: block;
+}
+
+.Add{
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    padding: 3px;
+    position: relative;
+    min-width: 400px;
+    min-height: 260px;
+    margin: 15px;
+    box-shadow: 20px 10px 30px #BBBBBB;
+    display: block;
+    background-color: #ffff80;
+    padding-bottom: 15px;
+}
+
+.Code_description{
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  padding: 3px;
+  position: relative;
+  margin: 15px;
+  box-shadow: 10px 10px 10px #BBBBBB;
+  display: inline-block;
+  background-color: #ffff80;
+}
+
+.namelist{
+  font-family: 'Raleway', sans-serif;
+}
